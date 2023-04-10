@@ -1,3 +1,4 @@
+#Importing the required libraries
 from pathlib import Path
 
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -374,7 +375,7 @@ class Ui_MainWindow(object):
 6 : VASC (Vascular lesion)
 7 : SCC (Squamous cell carcinoma)
 -- : UNK ( Unknown) (--deleted from the Dataset taken )
-8 : Cellulitis Impetigo and other Bacterial Infections ( Dermnet Dataset)
+8 : Cellulitis Impetigo and other Bacterial Infections ( Dermnet Dataset)[Spider Bite]
 '''
         if (cn == 0):
             print("Melanoma")
@@ -544,7 +545,7 @@ class Ui_MainWindow(object):
         model = Model(inputs=[input_img], outputs=[outputs])
         return model
 
-
+#__main__
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
